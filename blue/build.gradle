@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.2"
 
     defaultConfig {
-        applicationId "com.svasan.bluetoothmmochatroom"
+        applicationId "com.chat"
         minSdkVersion 16
         targetSdkVersion 23
     }

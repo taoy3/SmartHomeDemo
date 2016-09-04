@@ -4,7 +4,7 @@
     api-level="23"
     density="xxhdpi"
     format="7"
-    timestamp="117640750522530" >
+    timestamp="78619598986369" >
 
     <task
         name="javac"
@@ -20,18 +20,13 @@
         duration="0" />
 
     <artifact
-        location="/Users/taoy3/AndroidStudioProjects/code/BluetoothDemo/app/build/intermediates/res/resources-debug.ap_"
-        type="RESOURCES" />
+        location="/Users/taoy3/AndroidStudioProjects/code/SmartHomeDemo/blue/build/outputs/apk/blue-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="117525784784483" >
+    <build timestamp="78619598986369" >
         <artifact
-            location="/Users/taoy3/AndroidStudioProjects/code/BluetoothDemo/app/build/outputs/apk/app-debug.apk"
+            location="/Users/taoy3/AndroidStudioProjects/code/SmartHomeDemo/blue/build/outputs/apk/blue-debug.apk"
             type="MAIN" />
-    </build>
-    <build timestamp="117640750522530" >
-        <artifact
-            location="/Users/taoy3/AndroidStudioProjects/code/BluetoothDemo/app/build/intermediates/res/resources-debug.ap_"
-            type="RESOURCES" />
     </build>
 
 </instant-run>

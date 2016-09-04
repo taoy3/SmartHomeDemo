@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.svasan.bluetoothmmochatroom.test">
+    package="com.chat.test">
 
     <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="23" />
 
@@ -9,8 +9,8 @@
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="com.svasan.bluetoothmmochatroom"
+                     android:targetPackage="com.chat"
                      android:handleProfiling="false"
                      android:functionalTest="false"
-                     android:label="Tests for com.svasan.bluetoothmmochatroom"/>
+                     android:label="Tests for com.chat"/>
 </manifest>

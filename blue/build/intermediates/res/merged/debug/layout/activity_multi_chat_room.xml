@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/wood" >
+    <include
+        layout="@layout/theme_attr"/>
+    <RelativeLayout
+        android:layout_marginTop="100dp"
+        android:id="@+id/MessageBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" 
+        android:background="@android:color/black">
+
+        <ImageButton
+            android:id="@+id/imgButton"
+            android:layout_width="@dimen/showimg_ImageButton_size"
+            android:layout_height="@dimen/showimg_ImageButton_size"
+            android:layout_marginLeft="@dimen/showimg_ImageButton_marginLeft"
+            android:contentDescription="@string/face"
+            android:src="@mipmap/block_add_btn" />
+
+        <EditText
+            android:textColor="@android:color/white"
+            android:id="@+id/MessageText"
+            android:layout_width="@dimen/sendMsg_EditText_width"
+            android:layout_height="@dimen/sendMsg_EditText_height"
+            android:layout_marginLeft="@dimen/sendMsg_EditText_marginLeft"
+            android:hint="@string/sendMsg_EditText_hint"
+            android:textSize="@dimen/sendMsg_EditText_textSize" />
+
+        <Button
+            android:id="@+id/MessageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sendMsg_Button_height"
+            android:layout_alignParentRight="true"
+            android:text="@string/sendMsg_Button_text"
+            android:textSize="@dimen/sendMsg_Button_textSize"/>
+    </RelativeLayout>
+
+    <ListView
+        android:layout_marginTop="100dp"
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/MessageBox"
+        android:layout_alignParentTop="true"
+        android:dividerHeight="@dimen/listMsg_ListView_dividerHeight" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,38 +1,38 @@
 [
     {
-        "merged": "/Users/taoy3/AndroidStudioProjects/code/BluetoothDemo/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/btn_bg2.png",
-        "source": "/Users/taoy3/AndroidStudioProjects/code/BluetoothDemo/app/src/main/res/mipmap-hdpi/btn_bg2.png"
+        "merged": "/Users/taoy3/AndroidStudioProjects/code/SmartHomeDemo/blue/build/intermediates/res/merged/debug/mipmap-hdpi-v4/block_add_btn.png",
+        "source": "/Users/taoy3/AndroidStudioProjects/code/SmartHomeDemo/blue/src/main/res/mipmap-hdpi/block_add_btn.png"
     },
     {
-        "merged": "/Users/taoy3/AndroidStudioProjects/code/BluetoothDemo/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/theme_bg_pink.png",
-        "source": "/Users/taoy3/AndroidStudioProjects/code/BluetoothDemo/app/src/main/res/mipmap-hdpi/theme_bg_pink.png"
+        "merged": "/Users/taoy3/AndroidStudioProjects/code/SmartHomeDemo/blue/build/intermediates/res/merged/debug/mipmap-hdpi-v4/ic_launcher.png",
+        "source": "/Users/taoy3/AndroidStudioProjects/code/SmartHomeDemo/blue/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/taoy3/AndroidStudioProjects/code/BluetoothDemo/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/retouxiang.png",
-        "source": "/Users/taoy3/AndroidStudioProjects/code/BluetoothDemo/app/src/main/res/mipmap-hdpi/retouxiang.png"
+        "merged": "/Users/taoy3/AndroidStudioProjects/code/SmartHomeDemo/blue/build/intermediates/res/merged/debug/mipmap-hdpi-v4/theme_bg_pink.png",
+        "source": "/Users/taoy3/AndroidStudioProjects/code/SmartHomeDemo/blue/src/main/res/mipmap-hdpi/theme_bg_pink.png"
     },
     {
-        "merged": "/Users/taoy3/AndroidStudioProjects/code/BluetoothDemo/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/btn_bg1.png",
-        "source": "/Users/taoy3/AndroidStudioProjects/code/BluetoothDemo/app/src/main/res/mipmap-hdpi/btn_bg1.png"
+        "merged": "/Users/taoy3/AndroidStudioProjects/code/SmartHomeDemo/blue/build/intermediates/res/merged/debug/mipmap-hdpi-v4/btn_bg1.png",
+        "source": "/Users/taoy3/AndroidStudioProjects/code/SmartHomeDemo/blue/src/main/res/mipmap-hdpi/btn_bg1.png"
     },
     {
-        "merged": "/Users/taoy3/AndroidStudioProjects/code/BluetoothDemo/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/ic_launcher.png",
-        "source": "/Users/taoy3/AndroidStudioProjects/code/BluetoothDemo/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+        "merged": "/Users/taoy3/AndroidStudioProjects/code/SmartHomeDemo/blue/build/intermediates/res/merged/debug/mipmap-hdpi-v4/backup_sms.png",
+        "source": "/Users/taoy3/AndroidStudioProjects/code/SmartHomeDemo/blue/src/main/res/mipmap-hdpi/backup_sms.png"
     },
     {
-        "merged": "/Users/taoy3/AndroidStudioProjects/code/BluetoothDemo/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/app_icon.png",
-        "source": "/Users/taoy3/AndroidStudioProjects/code/BluetoothDemo/app/src/main/res/mipmap-hdpi/app_icon.png"
+        "merged": "/Users/taoy3/AndroidStudioProjects/code/SmartHomeDemo/blue/build/intermediates/res/merged/debug/mipmap-hdpi-v4/retouxiang.png",
+        "source": "/Users/taoy3/AndroidStudioProjects/code/SmartHomeDemo/blue/src/main/res/mipmap-hdpi/retouxiang.png"
     },
     {
-        "merged": "/Users/taoy3/AndroidStudioProjects/code/BluetoothDemo/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/block_add_btn.png",
-        "source": "/Users/taoy3/AndroidStudioProjects/code/BluetoothDemo/app/src/main/res/mipmap-hdpi/block_add_btn.png"
+        "merged": "/Users/taoy3/AndroidStudioProjects/code/SmartHomeDemo/blue/build/intermediates/res/merged/debug/mipmap-hdpi-v4/btn_bg2.png",
+        "source": "/Users/taoy3/AndroidStudioProjects/code/SmartHomeDemo/blue/src/main/res/mipmap-hdpi/btn_bg2.png"
     },
     {
-        "merged": "/Users/taoy3/AndroidStudioProjects/code/BluetoothDemo/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/backup_sms.png",
-        "source": "/Users/taoy3/AndroidStudioProjects/code/BluetoothDemo/app/src/main/res/mipmap-hdpi/backup_sms.png"
+        "merged": "/Users/taoy3/AndroidStudioProjects/code/SmartHomeDemo/blue/build/intermediates/res/merged/debug/mipmap-hdpi-v4/app_icon.png",
+        "source": "/Users/taoy3/AndroidStudioProjects/code/SmartHomeDemo/blue/src/main/res/mipmap-hdpi/app_icon.png"
     },
     {
-        "merged": "/Users/taoy3/AndroidStudioProjects/code/BluetoothDemo/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/wood.jpg",
-        "source": "/Users/taoy3/AndroidStudioProjects/code/BluetoothDemo/app/src/main/res/mipmap-hdpi/wood.jpg"
+        "merged": "/Users/taoy3/AndroidStudioProjects/code/SmartHomeDemo/blue/build/intermediates/res/merged/debug/mipmap-hdpi-v4/wood.jpg",
+        "source": "/Users/taoy3/AndroidStudioProjects/code/SmartHomeDemo/blue/src/main/res/mipmap-hdpi/wood.jpg"
     }
 ]

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.taoy3.framwork.R;
@@ -17,6 +18,8 @@ public class TelActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tel);
+        final TextView et = (TextView) findViewById(R.id.et);
+
         // 取得TelephonyManager对象
         tManager = (TelephonyManager)
                 getSystemService(Context.TELEPHONY_SERVICE);
@@ -43,6 +46,7 @@ public class TelActivity extends AppCompatActivity {
 //                        ps.println(new Date() + " 来电：" + number);
 //                        ps.close();
                         Toast.makeText(TelActivity.this,number,Toast.LENGTH_LONG).show();
+                        et.append(number);
                         break;
                     default:
                         break;

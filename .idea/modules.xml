@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/SmartHomeDemo.iml" filepath="$PROJECT_DIR$/SmartHomeDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/blue/blue.iml" filepath="$PROJECT_DIR$/blue/blue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framwork/framwork.iml" filepath="$PROJECT_DIR$/framwork/framwork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ndkdemo/ndkdemo.iml" filepath="$PROJECT_DIR$/ndkdemo/ndkdemo.iml" />
     </modules>
   </component>
 </project>

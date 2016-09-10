@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FramWork</string>
+    <string name="connectivity">连接服务</string>
+    <string name="telephony">打开电话服务</string>
+    <string name="notification">通知服务</string>
+    <string name="alarm">提醒服务</string>
+    <string name="vibrator">振动服务</string>
+    <string name="audio">音频服务</string>
+    <string name="sms">信息服务</string>
+    <string name="play">play</string>
+    <string name="up">up</string>
+    <string name="down">down</string>
+    <string name="toggle">toggle</string>
+    <string name="send">send</string>
+    <string name="del">del</string>
+    <string name="sendButton">sendButton</string>
+    <string name="number">number</string>
+    <string name="content">content</string>
+</resources>

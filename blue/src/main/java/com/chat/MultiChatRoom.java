@@ -75,6 +75,7 @@ public class MultiChatRoom extends Activity implements OnClickListener, OnItemCl
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_multi_chat_room);
+
         roomView = findViewById(R.id.mainlayout);
         faceButton = (ImageButton) findViewById(R.id.imgButton);
         messageEditext = (EditText) findViewById(R.id.MessageText);
@@ -141,14 +142,7 @@ public class MultiChatRoom extends Activity implements OnClickListener, OnItemCl
         }
     }
 
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        // 停止服务
-        if (mChatService != null)
-            mChatService.stop();
-        Log.e(TAG, "--- ON DESTROY ---");
-    }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -281,10 +275,6 @@ public class MultiChatRoom extends Activity implements OnClickListener, OnItemCl
         }
     }
 
-
-
-
-
     private void connectDevice(Intent data, boolean secure) {
         // Get the device MAC address
         String address = data.getExtras().getString(
@@ -395,5 +385,13 @@ public class MultiChatRoom extends Activity implements OnClickListener, OnItemCl
         SpannableStringBuilder ss = mFaceInfo.imagistSpan(newstr);
         messageEditext.setText(ss);
         messageEditext.setSelection(ss.length());
+    }
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        // 停止服务
+        if (mChatService != null)
+            mChatService.stop();
+        Log.e(TAG, "--- ON DESTROY ---");
     }
 }

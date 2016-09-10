@@ -4,24 +4,20 @@
     api-level="23"
     density="xxhdpi"
     format="7"
-    timestamp="78619598986369" >
+    timestamp="3166231876997" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="843" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="225" />
     <task
         name="verifier"
-        duration="0" />
-
-    <artifact
-        location="/Users/taoy3/AndroidStudioProjects/code/SmartHomeDemo/blue/build/outputs/apk/blue-debug.apk"
-        type="MAIN" />
+        duration="4" />
 
     <build timestamp="78619598986369" >
         <artifact

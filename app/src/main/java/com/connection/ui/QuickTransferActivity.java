@@ -62,7 +62,6 @@ public class QuickTransferActivity extends Activity implements View.OnClickListe
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-
         tvSend = (EditText) this.findViewById(R.id.send_content);
         tvReceiver = (TextView) this.findViewById(R.id.receiver_content);
         tvReceiver.append("很好");

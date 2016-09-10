@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
+    android:layout_height="60dp"
     android:gravity="center_horizontal"
     android:orientation="horizontal" >
 
@@ -10,8 +10,7 @@
         android:layout_height="wrap_content"
         android:text="@string/theme_search_button"
         android:layout_marginLeft="5dp"
-        android:background="@drawable/titlebuttonback"
-        />
+        android:background="@drawable/titlebuttonback" />
     <TextView android:id="@+id/theme_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

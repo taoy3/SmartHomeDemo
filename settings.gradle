@@ -1,1 +1,1 @@
-include ':app', ':blue'
+include ':app', ':blue', ':ndkdemo', ':framwork'

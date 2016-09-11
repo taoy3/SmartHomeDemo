@@ -2,11 +2,9 @@ package com.taoy3.framwork.downloaderstopsart;
 
 import android.content.Context;
 import android.os.Handler;
-import android.os.Message;
 import android.util.Log;
 
 import java.io.File;
-import java.io.InputStream;
 import java.io.RandomAccessFile;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -26,16 +24,15 @@ public class Downloader {
     private List<DownloadInfo> infos;// 存放下载信息类的集合
     private static final int INIT = 1;//定义三种下载的状态：初始化状态，正在下载状态，暂停状态
     private static final int DOWNLOADING = 2;
-    private static final int PAUSE = 3;
     private int state = INIT;
-
+    public static final int PAUSE = 3;
     public Downloader(String urlstr, String localfile, int threadcount,
                       Context context, Handler mHandler) {
         this.urlstr = urlstr;
         this.localfile = localfile;
         this.threadcount = threadcount;
         this.mHandler = mHandler;
-        dao = new Dao(context);
+        dao = Dao.getInastance(context);
     }
     /**
      *判断是否正在下载
@@ -91,8 +88,10 @@ public class Downloader {
             fileSize = connection.getContentLength();
 
             File file = new File(localfile);
-            if (!file.exists()) {
-                file.createNewFile();
+            if (file.exists()) {
+                file.delete();
+            }else if(!file.getParentFile().exists()){
+                file.getParentFile().mkdirs();
             }
             // 本地访问文件
             RandomAccessFile accessFile = new RandomAccessFile(file, "rwd");
@@ -144,52 +143,7 @@ public class Downloader {
         }
         @Override
         public void run() {
-            HttpURLConnection connection = null;
-            RandomAccessFile randomAccessFile = null;
-            InputStream is = null;
-            try {
-
-                URL url = new URL(urlstr);
-                connection = (HttpURLConnection) url.openConnection();
-                connection.setConnectTimeout(5000);
-                connection.setRequestMethod("GET");
-                // 设置范围，格式为Range：bytes x-y;
-                connection.setRequestProperty("Range", "bytes="+(startPos + compeleteSize) + "-" + endPos);
-
-                randomAccessFile = new RandomAccessFile(localfile, "rwd");
-                randomAccessFile.seek(startPos + compeleteSize);
-                Log.i("RG", "connection--->>>"+connection);
-                // 将要下载的文件写到保存在保存路径下的文件中
-                is = connection.getInputStream();
-                byte[] buffer = new byte[4096];
-                int length = -1;
-                while ((length = is.read(buffer)) != -1) {
-                    randomAccessFile.write(buffer, 0, length);
-                    compeleteSize += length;
-                    // 更新数据库中的下载信息
-                    dao.updataInfos(threadId, compeleteSize, urlstr);
-                    // 用消息将下载信息传给进度条，对进度条进行更新
-                    Message message = Message.obtain();
-                    message.what = 1;
-                    message.obj = urlstr;
-                    message.arg1 = length;
-                    mHandler.sendMessage(message);
-                    if (state == PAUSE) {
-                        return;
-                    }
-                }
-            } catch (Exception e) {
-                e.printStackTrace();
-            } finally {
-                try {
-                    is.close();
-                    randomAccessFile.close();
-                    connection.disconnect();
-                    dao.closeDb();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
+           HttpUtils.downFile(threadId,startPos,endPos,compeleteSize,urlstr, dao, localfile,  mHandler, state);
 
         }
     }

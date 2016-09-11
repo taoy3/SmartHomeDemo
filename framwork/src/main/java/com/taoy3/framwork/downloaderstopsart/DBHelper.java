@@ -12,11 +12,22 @@ import android.database.sqlite.SQLiteOpenHelper;
  * 建立一个数据库帮助类
  */
 public class DBHelper extends SQLiteOpenHelper {
+    private static DBHelper helper;
     // download.db-->数据库名
-    public DBHelper(Context context) {
+    private DBHelper(Context context) {
         super(context, "download.db", null, 1);
     }
 
+public static DBHelper getInstance(Context context){
+    if(helper==null){
+        synchronized (DBHelper.class){
+            if(helper==null){
+                helper  = new DBHelper(context);
+            }
+        }
+    }
+    return helper;
+}
     /**
      * 在download.db数据库下创建一个download_info表存储下载信息
      */

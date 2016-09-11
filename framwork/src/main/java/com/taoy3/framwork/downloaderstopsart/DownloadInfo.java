@@ -9,7 +9,10 @@ public class DownloadInfo {
     private int endPos;// 结束点
     private int compeleteSize;// 完成度
     private String url;// 下载器网络标识
-
+    private int state = INIT;
+    public static final int INIT = 1;//定义三种下载的状态：初始化状态，正在下载状态，暂停状态
+    public static final int DOWNLOADING = 2;
+    public static final int PAUSE = 3;
     public DownloadInfo(int threadId, int startPos, int endPos,
                         int compeleteSize, String url) {
         this.threadId = threadId;
@@ -19,6 +22,12 @@ public class DownloadInfo {
         this.url = url;
     }
 
+    public void setState(int state){
+        this.state = state;
+    }
+    public int getState(){
+        return state;
+    }
     public DownloadInfo() {
     }
 
